@@ -907,3 +907,237 @@ Processing by UsersController#create as HTML
 Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 4930)
 
 
+Started GET "/users" for ::1 at 2021-04-13 05:55:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2021-04-13 05:55:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users/new" for ::1 at 2021-04-13 05:55:41 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 2930)
+Completed 200 OK in 25ms (Views: 22.4ms | Allocations: 3568)
+
+
+Started POST "/users" for ::1 at 2021-04-13 05:55:51 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"mih julius ndim ", "email"=>"mihndim2016@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "mih julius ndim "], ["email", "mihndim2016@gmail.com"], ["password", "xxxxxx"], ["created_at", "2021-04-13 09:55:51.679427"], ["updated_at", "2021-04-13 09:55:51.679427"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (14.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 65ms (ActiveRecord: 16.3ms | Allocations: 8806)
+
+
+Started GET "/users/new" for ::1 at 2021-04-13 05:55:51 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 2901)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 3346)
+
+
+Started POST "/users" for ::1 at 2021-04-13 05:56:41 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"jelsieprisca2016@gmail.com", "email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 2814)
+Completed 200 OK in 32ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+Started POST "/users" for ::1 at 2021-04-13 06:00:23 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"mih elsie ", "email"=>"elsie@gmail.coo", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "mih elsie "], ["email", "elsie@gmail.coo"], ["password", "xxxxxxxx"], ["created_at", "2021-04-13 10:00:24.013831"], ["updated_at", "2021-04-13 10:00:24.013831"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (18.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 48ms (ActiveRecord: 19.3ms | Allocations: 10541)
+
+
+Started GET "/users/new" for ::1 at 2021-04-13 06:00:24 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5694)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 8068)
+
+
+Started GET "/users/new" for ::1 at 2021-04-13 06:01:20 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2938)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 3566)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/users/new" for ::1 at 2021-04-13 06:50:39 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 25.8ms | Allocations: 3615)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 3686)
+Completed 500 Internal Server Error in 35ms (Allocations: 4870)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+
+
+<%# <form action= "/users" method = "post" accept-charset = "UTF-8">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token % >">
+<label for ="username">Username: </label>
+<input type = "text" id ="username" name = "user[username]" placeholder = "Username">
+<label for = "email">Email:</label>
+<input type = "email" id = "email" name = "user[email]" placeholder = "Email">
+<label for = "password"> Password: </label>
+<input type = "password" name = "user[password]" id = "password" placeholder = "Password">
+<input type = "submit" name = "commit" value = "Submit">
+</form> %>
+
+<%= form_tag('users') do %>
+<%= label_tag :username, 'Username' %>
+<%= text_field_tag :username, placeholder: 'Username' %>
+<%= label_tag :email, 'Email' %>
+<%= text_field_tag :email, placeholder: 'Email'%>
+<%= label_tag :password, 'Password' %>
+<%= password_field_tag :password, placeholder: 'Password' %>
+<%= submit_tag 'Save User' %>
+
+
+
+):
+1:    <h1>Users#new</h1>
+2:    <p>Find me in app/views/users/new.html.erb</p>
+3:    
+4:    
+5:    <%# <form action= "/users" method = "post" accept-charset = "UTF-8">
+6:    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token % >">
+7:    <label for ="username">Username: </label>
+8:    <input type = "text" id ="username" name = "user[username]" placeholder = "Username">
+9:    <label for = "email">Email:</label>
+10:    <input type = "email" id = "email" name = "user[email]" placeholder = "Email">
+11:    <label for = "password"> Password: </label>
+12:    <input type = "password" name = "user[password]" id = "password" placeholder = "Password">
+13:    <input type = "submit" name = "commit" value = "Submit">
+14:    </form> %>
+15:    
+16:    <%= form_tag('users') do %>
+17:    <%= label_tag :username, 'Username' %>
+18:    <%= text_field_tag :username, placeholder: 'Username' %>
+19:    <%= label_tag :email, 'Email' %>
+20:    <%= text_field_tag :email, placeholder: 'Email'%>
+21:    <%= label_tag :password, 'Password' %>
+22:    <%= password_field_tag :password, placeholder: 'Password' %>
+23:    <%= submit_tag 'Save User' %>
+  
+app/views/users/new.html.erb:28: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:28: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/new" for ::1 at 2021-04-13 06:54:25 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3694)
+Completed 200 OK in 22ms (Views: 19.6ms | Allocations: 4896)
+
+
+Started POST "/users" for ::1 at 2021-04-13 06:55:16 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"testing ", "email"=>"formtag@gmail.com ", "password"=>"[FILTERED]", "commit"=>"Save User"}
+Completed 400 Bad Request in 21ms (Allocations: 2980)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user
+Did you mean?  username
+               password
+               authenticity_token
+               controller):
+  
+app/controllers/users_controller.rb:20:in `user_params'
+app/controllers/users_controller.rb:8:in `create'
+Started POST "/users" for ::1 at 2021-04-13 07:01:44 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"testing ", "email"=>"formtag@gmail.com ", "password"=>"[FILTERED]", "commit"=>"Save User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "testing "], ["email", "formtag@gmail.com "], ["password", "xxxxxxxx"], ["created_at", "2021-04-13 11:01:44.322147"], ["updated_at", "2021-04-13 11:01:44.322147"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (14.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 39ms (ActiveRecord: 15.8ms | Allocations: 10450)
+
+
+Started GET "/users/new" for ::1 at 2021-04-13 07:01:44 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 847)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 6159)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 8176)
+
+
+Started POST "/users" for ::1 at 2021-04-13 07:02:25 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "username"=>"mih zilion ", "email"=>"zilion@gmail.com ", "password"=>"[FILTERED]", "commit"=>"Save User"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "mih zilion "], ["email", "zilion@gmail.com "], ["password", "xxxxxxxx"], ["created_at", "2021-04-13 11:02:25.077995"], ["updated_at", "2021-04-13 11:02:25.077995"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (20.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 43ms (ActiveRecord: 21.6ms | Allocations: 4399)
+
+
+Started GET "/users/new" for ::1 at 2021-04-13 07:02:25 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3108)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 3553)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]

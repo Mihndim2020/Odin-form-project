@@ -2,8 +2,8 @@
 <p>Find me in app/views/users/new.html.erb</p>
 
 
-<form action= "/users" method = "post" accept-charset = "UTF-8">
-<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<%# <form action= "/users" method = "post" accept-charset = "UTF-8">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token % >">
 <label for ="username">Username: </label>
 <input type = "text" id ="username" name = "user[username]" placeholder = "Username">
 <label for = "email">Email:</label>
@@ -11,4 +11,16 @@
 <label for = "password"> Password: </label>
 <input type = "password" name = "user[password]" id = "password" placeholder = "Password">
 <input type = "submit" name = "commit" value = "Submit">
-</form>
+</form> %>
+
+<%= form_tag('/users') do %>
+<%= label_tag :username, 'Username' %>
+<%= text_field_tag :username, placeholder: 'Username' %>
+<%= label_tag :email, 'Email' %>
+<%= text_field_tag :email, placeholder: 'Email'%>
+<%= label_tag :password, 'Password' %>
+<%= password_field_tag :password, placeholder: 'Password' %>
+<%= submit_tag 'Save User' %>
+<% end %>
+
+
