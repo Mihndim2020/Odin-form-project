@@ -807,3 +807,13 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 33ms (Views: 29.2ms | Allocations: 3327)
 
 
+Started GET "/users/new" for ::1 at 2021-04-13 05:12:32 -0400
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2889)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 3327)
+
+
