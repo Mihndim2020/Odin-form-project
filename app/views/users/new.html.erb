@@ -13,14 +13,22 @@
 <input type = "submit" name = "commit" value = "Submit">
 </form> %>
 
-<%= form_tag('/users') do %>
-<%= label_tag :username, 'Username' %>
-<%= text_field_tag :username, placeholder: 'Username' %>
-<%= label_tag :email, 'Email' %>
-<%= text_field_tag :email, placeholder: 'Email'%>
-<%= label_tag :password, 'Password' %>
-<%= password_field_tag :password, placeholder: 'Password' %>
-<%= submit_tag 'Save User' %>
+<%# <%= form_tag('/users') do % >
+<%= label_tag :username, 'Username' % >
+<%= text_field_tag :username, placeholder: 'Username' % >
+<%= label_tag :email, 'Email' % > 
+<%= text_field_tag :email, placeholder: 'Email'% >
+<%= label_tag :password, 'Password' % >
+<%= password_field_tag :password, placeholder: 'Password' % >
+<%= submit_tag 'Save User' % >
+<% end % > %>
+
+<%= form_with url: "/users", method: :post do |form| %>
+  <%= form.label :username, "Your username here" %>
+  <%= form.text_field :username, placeholder: "Enter your username here! "  %>
+  <%= form.label :email, "Email:" %>
+  <%= form.text_field :email, placeholder: "example@example.com" %>
+  <%= form.label :password, "Password:" %>
+  <%= form.text_field :password, placeholder: "Password"  %>
+  <%= form.submit "Save User" %>
 <% end %>
-
-
