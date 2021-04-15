@@ -23,7 +23,7 @@
 <%= submit_tag 'Save User' % >
 <% end % > %>
 
-<%= form_with url: "/users", method: :post do |form| %>
+  <%= form_with model: @user do |form| %>
   <%= form.label :username, "Your username here" %>
   <%= form.text_field :username, placeholder: "Enter your username here! "  %>
   <%= form.label :email, "Email:" %>

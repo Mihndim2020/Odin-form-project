@@ -1,4 +1,5 @@
-<%= form_with url: "/users", method: :post do |form| %>
+<%# "/users", method: :post is been replace with model: @user %>
+  <%= form_with model: @user do |form| %>
   <%= form.label :username, "Your username here" %>
   <%= form.text_field :username, placeholder: "Enter your username here! "  %>
   <%= form.label :email, "Email:" %>
